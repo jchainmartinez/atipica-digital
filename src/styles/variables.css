@@ -1,0 +1,65 @@
+/* ===========================================
+   ATÍPICA DIGITAL — Variables globales
+   =========================================== */
+
+:root {
+  /* --- Paleta de colores --- */
+  /* Verde (acento principal, energía/diferenciación) */
+  --color-green: #068562;
+  --color-green-dark: #013F4A;
+
+  /* Azules (base, predominan sobre el verde) */
+  --color-blue-light: #015F70;
+  --color-blue-mid: #022E58;
+  --color-blue-dark: #012E56;
+  --color-blue-deep: #012E58;
+
+  /* Fondo y neutros */
+  --color-bg: #1c1c1c;       /* fondo gris oscuro base */
+  --color-bg-soft: #2a2a2a;  /* gris un tono más claro, para tarjetas/secciones */
+  --color-bg-light: #e9e9e9; /* gris claro, para secciones con texto oscuro */
+  --color-white: #ffffff;
+  --color-text-dark: #161616;
+  --color-text-light: #f4f4f4;
+  --color-text-muted: #9a9a9a;
+
+  /* Gradientes (sacados directo de la paleta de referencia) */
+  --gradient-primary: linear-gradient(135deg, var(--color-green) 0%, var(--color-blue-dark) 100%);
+  --color-accent: #3DFFC0;
+  --gradient-blue: linear-gradient(135deg, var(--color-blue-light) 0%, var(--color-blue-mid) 100%);
+  --gradient-hero: linear-gradient(160deg, var(--color-blue-deep) 0%, var(--color-green-dark) 50%, var(--color-blue-light) 100%);
+
+  /* --- Tipografía --- */
+  --font-display: 'Poppins', sans-serif; /* Títulos, slogans, bold */
+  --font-body: 'Inter', sans-serif;      /* Texto general, párrafos */
+
+  /* Tamaños */
+  --fs-hero: clamp(2.8rem, 6vw, 5.5rem);
+  --fs-h1: clamp(2.2rem, 4vw, 3.5rem);
+  --fs-h2: clamp(1.6rem, 3vw, 2.4rem);
+  --fs-h3: clamp(1.2rem, 2vw, 1.6rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+
+  /* --- Espaciados --- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  /* --- Bordes / formas (para evitar lo "cuadrado") --- */
+  --radius-sm: 12px;
+  --radius-md: 24px;
+  --radius-lg: 48px;
+  --radius-blob: 60% 40% 30% 70% / 60% 30% 70% 40%;
+
+  /* --- Transiciones --- */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.4s ease;
+  --transition-slow: 0.7s ease;
+
+  /* --- Layout --- */
+  --max-width: 1280px;
+  --header-height: 80px;
+}

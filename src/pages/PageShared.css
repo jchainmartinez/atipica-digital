@@ -1,0 +1,121 @@
+.page-hero {
+  padding: var(--space-xl) 0 var(--space-lg);
+  background: var(--gradient-hero);
+  border-bottom-left-radius: var(--radius-lg);
+}
+
+.page-hero__tag {
+  display: inline-block;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-green);
+  background: rgba(6, 133, 98, 0.15);
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  margin-bottom: var(--space-sm);
+}
+
+.page-hero h1 {
+  font-size: var(--fs-h1);
+  max-width: 700px;
+  margin-bottom: var(--space-sm);
+}
+
+.page-hero__lead {
+  color: var(--color-text-muted);
+  max-width: 540px;
+  font-size: 1.05rem;
+}
+
+.section-title {
+  font-size: var(--fs-h2);
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.two-col h2 {
+  font-size: var(--fs-h2);
+  margin-bottom: var(--space-sm);
+}
+
+.cards-grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.cards-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cards-grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.value-card,
+.service-card {
+  background: var(--color-bg-soft);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform var(--transition-medium);
+}
+
+.value-card:hover,
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+.value-card__icon,
+.service-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-blob);
+  background: var(--gradient-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.service-card__emoji {
+  font-size: 2.2rem;
+  margin-bottom: var(--space-sm);
+  display: block;
+}
+
+.value-card h3,
+.service-card h3 {
+  margin-bottom: var(--space-xs);
+}
+
+.client-logo {
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 900px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid--3,
+  .cards-grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .cards-grid--3,
+  .cards-grid--4 {
+    grid-template-columns: 1fr;
+  }
+}

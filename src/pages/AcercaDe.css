@@ -1,0 +1,67 @@
+/* INTRO */
+.acerca-intro {
+  border-left: 4px solid var(--color-green);
+  padding-left: var(--space-md);
+}
+
+.acerca-intro__texto {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+  font-weight: 600;
+  line-height: 1.4;
+  max-width: 780px;
+  color: var(--color-text-light);
+}
+
+/* BLOQUES SUEÑO Y OBJETIVO */
+.acerca-bloque__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  max-width: 820px;
+}
+
+.acerca-bloque__label {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.acerca-bloque__frase {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.2vw, 1.7rem);
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--color-text-light);
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* SUEÑO con fondo de color */
+.acerca-bloque--sueno {
+  background: var(--gradient-blue);
+  border-radius: var(--radius-sm) var(--radius-lg) var(--radius-sm) var(--radius-lg);
+  margin: 0 var(--space-md) var(--space-md);
+}
+
+/* OBJETIVO con fondo de color */
+.acerca-bloque--objetivo {
+  text-align: center;
+  background: var(--gradient-hero);
+  border-radius: var(--radius-lg) var(--radius-sm) var(--radius-lg) var(--radius-sm);
+  margin: 0 var(--space-md) var(--space-xl);
+}
+
+.acerca-bloque--objetivo .acerca-bloque__inner {
+  margin: 0 auto;
+  align-items: center;
+}
+
+.acerca-bloque__frase--grande {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--color-text-light);
+}
